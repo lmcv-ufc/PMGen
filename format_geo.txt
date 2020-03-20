@@ -1,0 +1,38 @@
+%VERTEX.LIST
+<Number of Topology Vertexes>
+<id1>    <x1> <y1> <z1> <w1> 
+<id2>    <x2> <y2> <z2> <w2>
+...
+<idn>    <xn> <yn> <zn> <wn>
+
+
+%EDGE.LIST
+<Number of edges>
+<vs.id> <ve.id> <rational_flag (always 1)> <BSpline Data> (repeat for each edge)
+
+// #BSpline Data: 
+//  <Degree> <Num Knots> <knot1 knot2 .. knotn> <mult1 mult2 ... multn> <CP1 CP1 CP2 ... CPN>
+//
+// #CP: <x> <y> <z> <w>  
+ 
+
+%REGION.LIST
+<Number of Regions>
+<Label>
+<Number of Region>
+  <Number of Boundary polygons> 
+    <'v1.id' 'v2.id' ... 'vn.id'> (repeat for each boundary polygon)
+
+  <Number of region holes>
+  .  <'v1.id' 'v2.id' ... 'vn.id'> (repeat for each hole)
+
+  <Number of region constraints>
+  .  <'v1.id' 'v2.id' ... 'vn.id'> (repeat for each constraint)
+
+  <Number of region partition>
+  .  <'v1.id' 'v2.id' ... 'vn.id'> (repeat for each partition)
+  
+. repeat for each region.
+
+
+%END

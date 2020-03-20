@@ -1,0 +1,29 @@
+%NODE
+<Number of Nodes>
+
+%NODE.COORD
+<Number of Nodes>
+<Node Label> <x coord> <y coord> <z coord> (repeat for each node)
+
+%CONTROL.POINT.WEIGHT
+<Number of Control Points>
+<Control Point or Node Label> <Control Point Weight> (repeat for each node)
+
+%ELEMENT
+<Number of Elements>
+
+%<ELEMENT_FLAG> (e.g. %ELEMENT.Q4, ELEMENT.T6, %ELEMENT.BEZIER.TRIANGLE ...)
+<Number of Elements>
+<Element Label> <Element Data> (repeat for each element)
+
+// #Element Data: 
+//  for T3, T6, Q4, Q8:  <Nodal Incidence> 
+//  for Bezier surface:  <Rational Flag> <DegreeR> <DegreeS> <Control Point Incidence>
+//  for Bezier triangle: <Rational Flag> <Degree> <Control Point Incidence>
+
+
+%BOUNDARY.ELEMENT.LIST
+<Number of boundary elements>
+<Element label>
+
+%END
